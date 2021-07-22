@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+}
+
+/* nav Css */
+
+.nav-logo {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo a img {
+  height: 25px;
+  width: 25px;
+  filter: invert(1);
+}
+
+/* footer Css  */
+
+footer {
+ 
+  
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+
+#github,
+#linkedin,
+#instagram {
+  padding: 0px 15px 0px 15px;
+}
+
+#profile-img {
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+
+  clip-path: circle(50% at 50% 50%);
+ 
+}
+.profile-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+
+  background-color: white;
+}
+
+.container p {
+  display: block;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-left: 25%;
+  margin-bottom: 90px;
+}
+
+#About-me {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.typewriter {
+  font-family: "Noto Sans JP", sans-serif;
+  display: inline-block;
+  padding-left: 28%;
+  margin-top: 20px;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid black;
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .typewriter-text {
+    display: none;
+  }
+  .container p {
+    padding-left: 5%;
+  }
+}
+
+/* Contact Css */
+
+.mb-3{
+ width: 700px;
+
+}
+
+.mb{
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+
+@media only screen and (max-width: 800px){
+  .mb-3{
+    width: 350px;
+   
+  }
+  .mb{
+    padding-left: 15px;
+  }
+  .mb-3 #exampleFormControlTextarea1{
+    height: 200px;
+  }
+  .mb-3 .form-control{
+    width: 90%;
+  }
+}
+
+.btn{
+  margin-bottom: 72px;
+}
+.p-3 p{
+  align-items: flex-start;
+  font-size: large;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+.col-6 .p-3 p #p-left{
+  padding-left: 0;
+}
+
+
+/* Courses Css  */
+.container1,.container2,.container3,.container4,.container5{
+  border: 2px solid black;
+  width: 50%;
+  border-radius: 10px;
+ padding: 20px 2px 10px 20px;
+ margin: 30px;
+ font-style:  "Noto Sans JP", sans-serif;
+ font-weight: 600;
+ height: 100px;
+ background-color:#F8F8FF;
+
+}
+
+
+@media  (min-width: 1200px){ 
+  .container1,.container2,.container3,.container4,.container5{
+  
+      transition: transform .2s;
+    
+    
+  }
+  .container1:hover,.container2:hover,.container3:hover,.container4:hover,.container5:hover {
+    transform: scale(1.1);
+  }
+  }
+
+
+
+
+.container1,.container2,.container3,.container4,.container5{
+  position: relative;
+ height: 100px;
+}
+
+.inline1, .inline2{
+ 
+  position: absolute;
+}
+
+ .inline2 #img-1{
+  margin-left: 460px;
+ 
+}
+
+.inline2 #img-2{
+  margin-left: 410px;
+}
+
+
+@media only screen and (max-width: 1230px){
+  .inline2 #img-1{
+    margin-left: 360px;
+  }
+  
+  .inline2 #img-2{
+    margin-left: 310px;
+  }
+}
+
+@media only screen and (max-width: 1015px){
+  .inline2 #img-1{
+    margin-left: 300px;
+  }
+  
+  .inline2 #img-2{
+    margin-left: 250px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .inline2 #img-1{
+    margin-left: 250px;
+  }
+  
+  .inline2 #img-2{
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .inline2 #img-1{
+    margin-left: 230px;
+  }
+  
+  .inline2 #img-2{
+    margin-left: 200px;
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .inline2 #img-1{
+    margin-left: 230px;
+  }
+  
+  .inline2 #img-2{
+    margin-left: 185px;
+    width: 100px;
+    height: 60px;
+  }
+}
+
+
+@media only screen and (max-width:660px){
+  .inline2{
+ 
+ display: none;
+  }
+}
+
+
+
+/* Project Css */
+.projects {
+  display: flex;
+  margin: 14px;
+  flex-direction: row;
+}
+.project1,.project2,.project3,.project4{
+  padding: 20px 5px 5px 20px;
+  border: 2px solid black;
+  width: 20%;
+  height: 400px;
+  border-radius: 20px;
+  margin-left: 35px;
+  text-align: center;
+  background-color:#F8F8FF;
+}
+
+.projects img{
+  margin: 5px 5px 15px 5px;
+  height: 110px;
+  width: 120px;
+}
+
+@media  (min-width: 1200px){ 
+  .project1,.project2,.project3,.project4{
+    
+      padding: 30px;
+    
+      transition: transform .2s;
+      width: 350px;
+      height: 420px;
+      margin: 35px 30px 35px 28px;
+    
+  }
+  .project1:hover,.project2:hover,.project3:hover,.project4:hover {
+    transform: scale(1.1);
+  }
+  }
+  
+  .project1,.project2,.project3,.project4{
+    height: 450px;
+  }
+
+
+  @media only screen and (max-width: 910px){
+    .projects {
+      flex-direction: column;
+     flex-wrap: wrap;
+    }
+    .project1,.project2,.project3,.project4{
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+
+
+  /* Skills Css
+   */
+  .Skillset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .Skillset img{
+    height: 75px;
+    width: 100px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+   
+  }
+  .Skills{
+    font-family:  "Noto Sans JP", sans-serif;;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 50px 5px 20px;
+    border: 2px solid black;
+    width: 20%;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 35px;
+    text-align: center;
+    background-color:#F8F8FF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+
+  @media  (min-width: 1200px){ 
+    .Skills{
+     transition: transform .2s;
+      margin: 35px 30px 35px 28px;
+      
+    }
+    .Skills:hover {
+      transform: scale(1.1);
+    }
+    }
+    
+
+    @media only screen and (max-width: 1035px){
+      .Skillset img{
+        height: 45px;
+        width: 60px;
+       
+        padding-bottom: 5px;
+      }
+    }
+
+    @media only screen and (max-width: 880px){
+     .Skills{
+       width: 40%;
+     }
+    }
