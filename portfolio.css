@@ -46,6 +46,14 @@ footer {
   clip-path: circle(50% at 50% 50%);
  
 }
+#profile-img2{
+  position: relative;
+  left: 210px;
+  height: 222px;
+  width: 222px;
+  margin-top: 19px;
+}
+
 .profile-img {
   display: flex;
   flex-direction: row;
@@ -248,6 +256,10 @@ footer {
     margin-left: 200px;
     width: 100px;
     height: 60px;
+  }
+
+  .profile-img{
+    width: 45vw;
   }
 }
 
